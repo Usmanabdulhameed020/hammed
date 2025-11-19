@@ -63,7 +63,7 @@ const JoinNow = ({ isOpen, onClose }) => {
                   />
                 </div>
 
-                <button className="w-full bg-sky-600 text-white py-2 rounded-lg shadow hover:bg-sky-700 transition">
+                <button className="w-full cursor-pointer bg-sky-600 text-white py-2 rounded-lg shadow hover:bg-sky-700 transition">
                   Login
                 </button>
 
@@ -120,7 +120,7 @@ const JoinNow = ({ isOpen, onClose }) => {
                   />
                 </div>
 
-                <button className="w-full bg-sky-600 text-white py-2 rounded-lg shadow hover:bg-sky-700 transition">
+                <button className="w-full cursor-pointer bg-sky-600 text-white py-2 rounded-lg shadow hover:bg-sky-700 transition">
                   Create Account
                 </button>
               </form>

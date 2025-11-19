@@ -40,7 +40,7 @@ const Agents = () => {
       {/* Header */}
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
-          Meet Our <span className="text-blue-600">Agents</span>
+          Meet Our <span className="text-sky-600">Agents</span>
         </h2>
 
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -78,7 +78,7 @@ const Agents = () => {
 
                 <button
                   onClick={() => setSelectedAgent(agent)}
-                  className="mt-5 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
+                  className="mt-5 cursor-pointer bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
                 >
                   Contact Agent
                 </button>
@@ -88,12 +88,10 @@ const Agents = () => {
         </div>
       </div>
 
-      {/* MODAL */}
       {selectedAgent && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8 relative">
 
-            {/* Close Button */}
             <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
               onClick={() => setSelectedAgent(null)}
@@ -101,7 +99,6 @@ const Agents = () => {
               <X size={24} />
             </button>
 
-            {/* Agent Info */}
             <div className="text-center mb-6">
               <img
                 src={selectedAgent.image}
@@ -112,7 +109,6 @@ const Agents = () => {
               <p className="text-blue-600">{selectedAgent.role}</p>
             </div>
 
-            {/* Contact Form */}
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -144,7 +140,7 @@ const Agents = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full"
+                className="w-full cursor-pointer bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full"
               >
                 Send Message
               </button>

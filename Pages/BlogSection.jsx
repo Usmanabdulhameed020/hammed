@@ -39,7 +39,6 @@ const BlogSection = () => {
           property decisions.
         </p>
 
-        {/* Blog Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
             <div

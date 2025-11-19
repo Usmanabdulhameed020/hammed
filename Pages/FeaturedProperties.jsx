@@ -33,7 +33,7 @@ const FeaturedProperties = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 m-5 text-center">
           Featured Properties
         </h2>
 
@@ -41,7 +41,7 @@ const FeaturedProperties = () => {
           {properties.map((property) => (
             <Link key={property.id} to={`/property/${property.id}`}>
               <motion.div
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                className="mt-16 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer"
                 whileHover={{ scale: 1.03 }}
               >
                 <img

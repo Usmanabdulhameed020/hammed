@@ -124,7 +124,7 @@ const FindAgent = ({ propertyName }) => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8 pb-6">
         {filteredAgents.length === 0 ? (
           <p className="text-gray-500 text-lg">No agents found.</p>
         ) : (

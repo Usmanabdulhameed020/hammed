@@ -19,11 +19,8 @@ const Footer = () => {
   ];
 
   return (
-    <motion.footer
+    <footer
       className="bg-gray-800 text-gray-200 py-16"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
@@ -74,7 +71,7 @@ const Footer = () => {
       <div className="mt-12 text-center text-gray-500 text-sm">
         &copy; {new Date().getFullYear()} StayFinder. All rights reserved.
       </div>
-    </motion.footer>
+    </footer>
   );
 };
 

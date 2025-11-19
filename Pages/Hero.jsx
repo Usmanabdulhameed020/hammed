@@ -119,7 +119,6 @@ const Hero = () => {
             Search
           </motion.button>
 
-          {/* Suggestions dropdown */}
           {suggestions.length > 0 && (
             <div className="absolute top-full mt-2 w-full sm:w-[500px] bg-white text-gray-800 rounded-xl shadow-lg z-50">
               {suggestions.map((item, index) => (
